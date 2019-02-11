@@ -1,0 +1,47 @@
+﻿<Window x:Class="PhotoTinderView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PhotoTinderView"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1000" Background="Black">
+
+    <Grid>
+        <Image x:Name="ImageFrame" HorizontalAlignment="Stretch"  Margin="10,10,0,0" VerticalAlignment="Stretch" />
+        <Canvas HorizontalAlignment="Stretch" Height="50" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="200" Background="#7FFFFFFF">
+            <Button x:Name="DeleteButton" HorizontalAlignment="Stretch" Height="50" Margin="100,0,0,0" VerticalAlignment="Bottom" Width="50" Click="Button_Delete_Photo" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" >
+                <DockPanel>
+                    <Image Source="deleteButton.png" />
+                </DockPanel>
+            </Button>
+            <Button x:Name="MoveChosenButton" HorizontalAlignment="Stretch" Height="50" Margin="0,0,0,0" VerticalAlignment="Bottom" Width="50" Click="Button_Move_Chosen_Photo" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" >
+                <DockPanel>
+                    <Image Source="thumbUpButton.png" />
+                </DockPanel>
+            </Button>
+            <Button x:Name="MoveAllButton"  HorizontalAlignment="Stretch" Height="50" Margin="50,0,0,0" VerticalAlignment="Bottom" Width="50" Click="Button_Move_All_Photo" Background="#00DDDDDD" BorderBrush="#00707070" Foreground="#00000000" >
+                <DockPanel>
+                    <Image Source="thumbDownButton.png" />
+                </DockPanel>
+            </Button>
+            <Button x:Name="LoadPhotoButton" HorizontalAlignment="Stretch" Height="50" Margin="150,0,0,0" VerticalAlignment="Bottom" Width="50" Click="Button_Load_Photo" BorderBrush="#00707070" Foreground="#00000000" Background="#00DDDDDD">
+                <DockPanel>
+                    <Image Source="LoadButton.png" OpacityMask="Black" />
+                </DockPanel>
+            </Button>
+        </Canvas>
+        <Label x:Name="InformationLabel" HorizontalContentAlignment="Center" Content="No images" Margin="0,0,0,0" Width="300" Height="33" Foreground="#FF96969C" FontWeight="Bold"/>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top" Background="#FF0A0A0A" Foreground="#FF969696">
+                <MenuItem Header="_Program" Background="#FF0A0A0A">
+                    <MenuItem Header="_Load Folder" Click="LoadFolder_Click" Background="#000A0A0A" Foreground="Black"/>
+                    <MenuItem Header="_Close" Click="CloseWindow_Click" Background="#00000000" Foreground="Black"/>
+                </MenuItem>
+
+            </Menu>
+            <StackPanel></StackPanel>
+        </DockPanel>
+        
+    </Grid>
+</Window>

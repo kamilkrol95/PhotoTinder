@@ -1,0 +1,11 @@
+"PhotoTinder" 
+
+Aby u³atwiæ uruchamianie programu, nale¿y utworzyæ skrót do aplikacji:
+C:\Users\Kamil\Documents\AGH IEiT\SEMESTR 2\C#\Projekt PhotoTinder\PhotoTinderView\PhotoTinderView\bin\Debug\PhotoTinderView.exe
+w dowolnym miejscu na dysku.
+
+MANUAL:
+strza³ka w górê (^) - wybór folderu ze zdjêciami do posortowania
+strza³ka w prawo (->) - przenieœ zdjêcie do folderu ogólnego (pojawia siê w folderze "all")
+strza³ka w lewo (<-) - przenieœ zdjêcie do folderu z wybranymi zdjêciami (pojawia siê w folderze "chosen")
+strza³ka w dó³ (v) - usuñ zdjêcie (nie pojawia siê w ¿adnym z nowych folderów) 
